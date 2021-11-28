@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>main-app-name</title>
+    <link href="https://unpkg.com/@webpixels/css@1.0/dist/index.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="px-5 py-5 p-lg-0 bg-surface-secondary">
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-5 col-xl-4 p-12 p-xl-20 position-fixed start-0 top-0 h-screen overflow-y-hidden bg-dark d-none d-lg-flex flex-column">
+                <!-- Logo -->
+                <a class="d-block" href="#">
+                    <h2 style="color: #fff;">main-app-name</h2>
+                </a>
+                <!-- Title -->
+                <div class="mt-32 mb-20">
+                    <h1 class="ls-tight font-bolder display-6 text-white mb-5">
+                        Meeting For Your Special Needs!
+                    </h1>
+                    <p class="text-white text-opacity-80">
+                        Enter your name and select the default meeting ID or create your own ID to initiate a meeting.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-7 offset-lg-5 border-left-lg min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative">
+                <div class="row">
+                    <div class="col-lg-10 col-md-9 col-xl-6 mx-auto ms-xl-0">
+                        <div class="mt-10 mt-lg-5 mb-6 d-flex align-items-center d-lg-block">
+                            <span class="d-inline-block d-lg-block h1 mb-lg-6 me-3">👋</span>
+                            <h1 class="ls-tight font-bolder h2">
+                                Nice to see you!
+                            </h1>
+                        </div>
+                        <form>
+                            <div class="mb-5">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control form-control-muted" id="user_name" autocomplete="off">
+                            </div>
+                            <div class="mb-5">
+                                <label class="form-label">Meeting ID</label>
+                                <input type="text" class="form-control form-control-muted" id="meeting_id" autocomplete="off">
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-dark w-full" onclick="loggedInApp(document.getElementById('user_name').value , document.getElementById('meeting_id').value)">
+                                    Get started
+                                </a>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    
+  </body>
+</html>
